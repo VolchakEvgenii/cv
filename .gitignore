@@ -1,0 +1,8 @@
+.idea
+node_modules
+resources
+platforms
+plugins
+bower_components
+logs
+www

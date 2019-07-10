@@ -1,0 +1,28 @@
+
+<md-dialog aria-label="buy" class="user-edit-dialog dialog">
+  <md-dialog-content>
+    <md-card>
+      <div ng-dropzone="" options="vm.dzOptions" callbacks="vm.dzCallbacks" methods="vm.dzMethods" class="dropzone"></div>
+      <form name="vm.editForm" role="form" novalidate="" ng-submit="vm.update(user)" class="layout-column">
+        <md-input-container ng-class="{ 'md-input-invalid' : vm.editForm.firstName.$invalid &amp;&amp; !vm.editForm.firstName.$pristine }">
+          <label>First Name</label>
+          <input type="text" required="" ng-model="vm.certainUser['first_name']" name="firstName"/>
+          <div ng-messages="vm.editForm.email.firstName" ng-if="vm.editForm.firstName.$dirty || vm.editForm.firstName.$touched" class="error-container">
+            <div ng-message="required" class="error">First Name field is required</div>
+          </div>
+        </md-input-container>
+        <md-input-container ng-class="{ 'md-input-invalid' : vm.editForm.lastName.$invalid &amp;&amp; !vm.editForm.lastName.$pristine }">
+          <label>Last Name</label>
+          <input type="text" required="" ng-model="vm.certainUser['last_name']" name="lastName"/>
+          <div ng-messages="vm.editForm.lastName.$error" ng-if="vm.editForm.lastName.$dirty || vm.editForm.lastName.$touched" class="error-container">
+            <div ng-message="required" class="error">Last Name field is required</div>
+          </div>
+        </md-input-container>
+      </form>
+    </md-card>
+  </md-dialog-content>
+  <md-dialog-actions class="layout-row layout-align-center-center">
+    <md-button ng-click="vm.update()" ng-disabled="!vm.editForm.$valid" class="flex-xs-33">Update</md-button>
+    <md-button ng-click="vm.dialogClose()" class="flex-xs-33">Cancel</md-button>
+  </md-dialog-actions>
+</md-dialog>

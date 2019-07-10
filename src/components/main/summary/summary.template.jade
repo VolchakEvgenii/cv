@@ -1,0 +1,7 @@
+.summary-page
+    .layout-row.layout-align-center-center
+        div.flex-70(ng-bind-html="vm.tinymceModel")
+    .layout-row.layout-align-center-center
+        md-button.md-raised.md-primary(aria-label='edit button', ng-click="vm.openTextEditDialog()")
+            span.md-padding Edit
+            i.fas.fa-edit(aria-hidden="true")

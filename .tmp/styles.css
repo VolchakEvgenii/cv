@@ -1,0 +1,157 @@
+/* line 1, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+body .login-wrapper {
+  height: -moz-calc(100% - 5px);
+  height: calc(100% - 5px); }
+  /* line 3, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+  body .login-wrapper md-card {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0; }
+    /* line 7, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+    body .login-wrapper md-card .wrap-logo {
+      padding: 20px 70px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #1d3964; }
+      /* line 13, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+      body .login-wrapper md-card .wrap-logo .logo {
+        width: 100px; }
+    /* line 17, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+    body .login-wrapper md-card md-button {
+      color: #ffffff; }
+    /* line 20, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+    body .login-wrapper md-card label.error {
+      text-align: center;
+      padding: 10px 5px;
+      font-size: 12px;
+      color: #dd2c00; }
+  /* line 27, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+  body .login-wrapper .error-container {
+    width: 285px; }
+
+@media (max-width: 600px) {
+  /* line 34, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+  body .login-wrapper md-card {
+    min-width: 300px; }
+    /* line 37, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+    body .login-wrapper md-card .md-title {
+      margin: 5px 0; }
+    /* line 40, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_login.scss */
+    body .login-wrapper md-card .md-subhead {
+      margin: 5px 0; } }
+
+/* line 3, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+body .main-sidenav md-list md-list-item {
+  border-bottom: 1px solid #cecece; }
+
+/* line 6, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+body .main-sidenav md-list .md-button {
+  text-align: left; }
+
+/* line 12, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+body .main-toolbar {
+  background-color: #1d3964; }
+  /* line 14, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+  body .main-toolbar .md-toolbar-tools {
+    height: 64px;
+    max-height: 64px; }
+    /* line 17, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+    body .main-toolbar .md-toolbar-tools .logo {
+      height: -moz-calc(100% - 10px);
+      height: calc(100% - 10px);
+      margin-right: 30px; }
+      /* line 20, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+      body .main-toolbar .md-toolbar-tools .logo span {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffffff; }
+    /* line 26, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+    body .main-toolbar .md-toolbar-tools .md-nav-bar {
+      border: none; }
+      /* line 29, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+      body .main-toolbar .md-toolbar-tools .md-nav-bar .md-nav-item .md-button {
+        color: #aed544;
+        border-bottom: 1px solid #aed544;
+        margin: 0 2px;
+        -moz-border-radius: 0;
+        border-radius: 0; }
+      /* line 35, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+      body .main-toolbar .md-toolbar-tools .md-nav-bar .md-nav-item.md-active a {
+        color: #fff;
+        background-color: #aed544; }
+
+/* line 44, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+body .main-content {
+  height: 100vh;
+  min-height: -moz-calc(100% - 90px);
+  min-height: calc(100% - 90px); }
+
+/* line 49, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+body .main-footer {
+  background-color: #1d3964;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-align: end; }
+  /* line 54, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+  body .main-footer .social-btn {
+    font-size: 18px;
+    color: #aed544; }
+    /* line 57, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+    body .main-footer .social-btn span {
+      margin-left: 10px; }
+
+@media (max-width: 660px) {
+  /* line 70, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_main.scss */
+  body .main-toolbar .md-toolbar-tools ._md-nav-bar-list ._md-nav-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px; } }
+
+/* line 1, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_dialogs.scss */
+body .dialog {
+  padding: 20px; }
+  /* line 3, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_dialogs.scss */
+  body .dialog iframe {
+    height: 400px !important; }
+  /* line 7, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_dialogs.scss */
+  body .dialog div.mce-edit-area {
+    height: 400px; }
+  /* line 11, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_dialogs.scss */
+  body .dialog md-card {
+    padding: 10px 0; }
+    /* line 13, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_dialogs.scss */
+    body .dialog md-card img.image {
+      max-width: 50%;
+      margin: 0 auto; }
+
+/* line 2, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_experience.scss */
+body .experience-page p {
+  margin: 0;
+  line-height: 22px; }
+
+/* line 6, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_experience.scss */
+body .experience-page md-card {
+  width: 650px; }
+
+/* line 9, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_experience.scss */
+body .experience-page md-card-header {
+  background: rgba(0, 0, 0, 0.1); }
+
+/* line 13, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_experience.scss */
+body .experience-page .technologies, body .experience-page a {
+  font-size: 12px;
+  color: grey; }
+
+/* line 19, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_experience.scss */
+body .experience-page button i {
+  color: rgba(0, 0, 0, 0.6); }
+
+/* line 24, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_experience.scss */
+body .experience-page md-card md-card-header md-card-avatar + md-card-header-text {
+  max-height: 100%; }
+
+/* line 1, /Users/Volchak/Work/nurd/cv/src/components/_global/scss/_languages.scss */
+body .languages-page {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; }

@@ -1,0 +1,23 @@
+.experience-page.layout-column.layout-align-space-around-center
+    md-list.layout-column.layout-align-space-between-center
+        md-list-item(ng-repeat="experience in vm.experienceData track by $index")
+            md-card
+                md-card-header.layout-row.layout-xs-column.layout-align-space-between-center.layout-xs-align-start-center
+                    .card-sub-header.layout-row
+                        md-card-avatar
+                            img(src="{{experience.icon ? experience.icon : 'https://cdn0.iconfinder.com/data/icons/business-and-finance-colored-3/64/business-and-finance-colored-3-11-512.png'}}")
+                        md-card-header-text
+                            span.md-title {{experience.title}}
+                            span.md-subhead {{experience.dateRange}}
+                    .card-action-section.layout-row.layout-align-center-center
+                        md-button.md-icon-button(aria-label='trash', ng-click="vm.remove($index)")
+                            i.fas.fa-trash-alt(aria-hidden="true")
+                        md-button.md-icon-button(aria-label='trash', ng-click="vm.openEditDialog(experience)")
+                            i.fas.fa-edit(aria-hidden="true")
+                md-card-content
+                    p {{experience.description}}
+                    p.technologies {{experience.technologies}}
+                    a(ng-if="experience.link" href="{{experience.link}}" target="_blank") {{experience.link}}
+    md-button.md-raised.md-primary(aria-label='edit button', ng-click="vm.openEditDialog({})")
+        span.md-padding ADD
+

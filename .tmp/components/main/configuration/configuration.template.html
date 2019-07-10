@@ -1,0 +1,28 @@
+
+<div class="settings-page layout-column layout-align-space-around-center">
+  <h1>Create new user</h1>
+  <div class="md-padding">
+    <form name="vm.newUserForm" role="form" novalidate="" ng-submit="vm.send()" class="layout-column">
+      <md-input-container ng-class="{ 'md-input-invalid' : vm.newUserForm.firstName.$invalid &amp;&amp; !vm.newUserForm.firstName.$pristine }">
+        <label>First Name</label>
+        <input type="text" required="" ng-model="vm.firstName" name="firstName"/>
+        <div ng-messages="vm.newUserForm.email.firstName" ng-if="vm.newUserForm.firstName.$dirty || vm.newUserForm.firstName.$touched" class="error-container">
+          <div ng-message="required" class="error">First Name field is required</div>
+        </div>
+      </md-input-container>
+      <md-input-container ng-class="{ 'md-input-invalid' : vm.newUserForm.lastName.$invalid &amp;&amp; !vm.newUserForm.lastName.$pristine }">
+        <label>Last Name</label>
+        <input type="text" required="" ng-model="vm.lastName" name="lastName"/>
+        <div ng-messages="vm.newUserForm.lastName.$error" ng-if="vm.newUserForm.lastName.$dirty || vm.newUserForm.lastName.$touched" class="error-container">
+          <div ng-message="required" class="error">Last Name field is required</div>
+        </div>
+      </md-input-container>
+      <md-input-container ng-class="{ 'md-input-invalid' : vm.newUserForm.job.$invalid &amp;&amp; !vm.newUserForm.job.$pristine }">
+        <label>Job</label>
+        <input type="text" ng-model="vm.newUser.job" name="job"/>
+      </md-input-container>
+      <div ng-dropzone="" options="vm.dzOptions" callbacks="vm.dzCallbacks" methods="vm.dzMethods" class="dropzone"></div>
+      <md-button type="submit" ng-disabled="!vm.newUserForm.$valid" class="md-raised md-primary">Send</md-button>
+    </form>
+  </div>
+</div>

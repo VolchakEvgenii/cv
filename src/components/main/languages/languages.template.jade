@@ -1,0 +1,22 @@
+.languages-page
+    md-list
+        md-list-item(ng-repeat="lang in vm.myLangData")
+            .flex-50(layout="row")
+                .flex-30
+                    img(alt="{{lang.name}}", ng-src="https://www.countryflags.io/{{lang.code}}/shiny/48.png")
+                p {{ lang.name }}
+            md-input-container.flex-50
+                label Level
+                md-select(ng-model="lang.level")
+                    md-option(ng-repeat="lv in vm.levels" ng-value="lv" ng-disabled="vm.levels[$index] === lang.level") {{lv}}
+    div(layout="row")
+        div.flex-50
+            md-button.md-raised(ng-click="vm.add()", ng-disabled="!vm.newLang.hasOwnProperty('name') || !vm.newLang.hasOwnProperty('level')") ADD
+            md-input-container
+                label Language
+                md-select(ng-model="vm.newLang")
+                    md-option(ng-repeat="item in vm.codeLangData" ng-value="item") {{item.nativeName}}
+        md-input-container.flex-50
+            label Level
+            md-select(ng-model="vm.newLang.level")
+                md-option(ng-repeat="lv in vm.levels" ng-value="lv") {{lv}}

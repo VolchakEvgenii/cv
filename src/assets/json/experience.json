@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "": "0",
+      "title": "Costanera Center",
+      "dateRange": "August 2015 - April 2016",
+      "icon": "https://mall.costaneracenter.cl/themes/custom/cencosudshop/images/brand-ccenter2.png",
+      "technologies": "Android, iOS cordova mobile app based on angularJS and Ionic Framework",
+      "description": "Mobile App was created for a mall. “Costanera center”.",
+      "link": ""
+    },
+    {
+      "": "1",
+      "title": "Papirux",
+      "dateRange": "April 2016 - December 2016",
+      "icon": "https://papirux.com/assets/images/icons/ic_logo_sign_white.svg",
+      "technologies": "Angular.js 1.*, Charts.js, Angular Material, Node.js",
+      "description": "Service helps to prepare articles and has ability to sell them.",
+      "link": "http://papirux.com"
+    },
+    {
+      "": "2",
+      "title": "Parking App, Delica (One client)",
+      "dateRange": "December 2016 - April 2017",
+      "icon": "",
+      "technologies": "Android, iOS cordova mobile app based on angularJS and Ionic Framework",
+      "description": "",
+      "link": ""
+    },
+    {
+      "": "3",
+      "title": "Stokercloud",
+      "dateRange": "April 2017 - August 2017",
+      "icon": "https://nbe-global.com/wp-content/uploads/2016/05/logo-small.png",
+      "technologies": "Angular 1.*, Material Design, REST",
+      "description": "The app help to observe central heating system and manage it",
+      "link": "https://stokercloud.dk/v3/#/"
+    },
+    {
+      "": "4",
+      "title": "Bionair",
+      "dateRange": "August 2017 - April 2018",
+      "icon": "http://www.bionär.ch/wp-content/uploads/2017/02/BionairWeiss.png",
+      "technologies": "Angular 1.*, Material Design, Go.js",
+      "description": "The app help to demonstrate farmers grow-fields and sell harvest.",
+      "link": "http://www.xn--bionr-jra.ch/"
+    },
+    {
+      "": "5",
+      "title": "Papirux v2",
+      "dateRange": "April 2018 - June 2018",
+      "icon": "https://papirux.com/assets/images/icons/ic_logo_sign_white.svg",
+      "technologies": "Angular.js 1.*, Charts.js, Angular Material, Node.js Material",
+      "description": "",
+      "link": "http://papirux.com"
+    },
+    {
+      "": "6",
+      "title": "DataWit, Israel",
+      "dateRange": "June 2018 - March 2019",
+      "icon": "https://datawit.com/wp-content/uploads/2018/05/logo_white@2x.png",
+      "technologies": "Angular.js 6, Charts.js, Angular Material,",
+      "description": "Web Analytics script to target user behaviour on site",
+      "link": "https://datawit.com/"
+    }
+  ]
+}

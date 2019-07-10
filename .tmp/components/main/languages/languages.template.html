@@ -1,0 +1,34 @@
+
+<div class="languages-page">
+  <md-list>
+    <md-list-item ng-repeat="lang in vm.myLangData">
+      <div layout="row" class="flex-50">
+        <div class="flex-30"><img alt="{{lang.name}}" ng-src="https://www.countryflags.io/{{lang.code}}/shiny/48.png"/></div>
+        <p>{{ lang.name }}</p>
+      </div>
+      <md-input-container class="flex-50">
+        <label>Level</label>
+        <md-select ng-model="lang.level">
+          <md-option ng-repeat="lv in vm.levels" ng-value="lv" ng-disabled="vm.levels[$index] === lang.level">{{lv}}</md-option>
+        </md-select>
+      </md-input-container>
+    </md-list-item>
+  </md-list>
+  <div layout="row">
+    <div class="flex-50">
+      <md-button ng-click="vm.add()" ng-disabled="!vm.newLang.hasOwnProperty('name') || !vm.newLang.hasOwnProperty('level')" class="md-raised">ADD</md-button>
+      <md-input-container>
+        <label>Language</label>
+        <md-select ng-model="vm.newLang">
+          <md-option ng-repeat="item in vm.codeLangData" ng-value="item">{{item.nativeName}}</md-option>
+        </md-select>
+      </md-input-container>
+    </div>
+    <md-input-container class="flex-50">
+      <label>Level</label>
+      <md-select ng-model="vm.newLang.level">
+        <md-option ng-repeat="lv in vm.levels" ng-value="lv">{{lv}}</md-option>
+      </md-select>
+    </md-input-container>
+  </div>
+</div>

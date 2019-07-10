@@ -1,0 +1,19 @@
+
+<div class="dashboard-page layout-column layout-align-space-around-center">
+  <h1>User List</h1>
+  <md-list class="layout-gt-sm-row layout-xs-column layout-align-space-between-center">
+    <md-list-item ng-repeat="user in vm.users.data track by $index">
+      <md-card>
+        <div ng-click="vm.openDetailDialog(user)" class="wrap-avatar"><img ng-src="{{user.avatar}}"/></div>
+        <md-card-title>
+          <md-card-title-text><span>{{user.first_name}} {{user.last_name}}</span></md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="center center">
+          <md-button aria-label="trash" ng-click="vm.remove($index)" class="md-icon-button"><i aria-hidden="true" class="fas fa-trash-alt"></i></md-button>
+          <md-button aria-label="trash" ng-click="vm.openEditDialog(user)" class="md-icon-button"><i aria-hidden="true" class="fas fa-edit"></i></md-button>
+        </md-card-actions>
+      </md-card>
+    </md-list-item>
+  </md-list>
+  <cl-paging cl-pages="vm.users.total_pages" cl-steps="10" cl-page-changed="vm.currentPage = vm.paging.current - 1" cl-current-page="vm.paging.current" class="flex layout-row layout-align-center-center"></cl-paging>
+</div>

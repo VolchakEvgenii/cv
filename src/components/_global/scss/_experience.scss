@@ -1,0 +1,28 @@
+.experience-page {
+    p {
+        margin: 0;
+        line-height: 22px;
+    }
+    md-card {
+        width: 650px;
+    }
+    md-card-header {
+        background: rgba(0,0,0, 0.1);
+    }
+
+    .technologies, a {
+        font-size: 12px;
+        color: grey;
+    }
+
+    button {
+        i {
+            color: rgba(0,0,0, 0.6);
+        }
+    }
+
+    md-card md-card-header md-card-avatar + md-card-header-text {
+        max-height: 100%;
+    }
+
+}
