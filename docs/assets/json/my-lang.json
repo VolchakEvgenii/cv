@@ -1,7 +1,0 @@
-{
-  "data": [
-    {"code":"gb","name":"English","nativeName":"English", "level": "Pre-Intermediate"},
-    {"code":"ua","name":"Ukrainian","nativeName":"українська", "level": "Native"},
-    {"code":"ru","name":"Russian","nativeName":"русский язык", "level": "Native"}
-  ]
-}
