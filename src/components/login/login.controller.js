@@ -1,6 +1,6 @@
-'use strict';
-
 (function () {
+    'use strict';
+
     angular
         .module('app.login')
         .controller('LoginCtrl', LoginCtrl);
@@ -20,9 +20,8 @@
         function login() {
             loginService.login(vm.user).then(function (data) {
                 if(data.token){
-                    console.log(data.token);
                     localStorageService.set('userToken', data.token);
-                    $state.go('main.dashboard');
+                    $state.go('main.summary');
                 } else if (data.error) {
                     vm.error = data.error;
                     vm.user = {};

@@ -26,7 +26,7 @@ var variables = {
         tmp: '.tmp/',
         app: 'src/',
         components: 'components/',
-        dist: 'www/'
+        dist: 'docs/'
     }
 };
 variables.src.appJs = [variables.src.app + variables.src.components + variables.filters.js, '!' + variables.src.app + variables.src.components + variables.filters.js_spec];
@@ -281,6 +281,7 @@ function buildPartials() {
         .pipe($.count())
         .pipe(gulp.dest(variables.src.tmp + variables.src.components));
 }
+
 function buildFonts() {
     var fonts = [
         '**/*.{eot,svg,ttf,woff,woff2}'

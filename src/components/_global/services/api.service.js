@@ -11,15 +11,15 @@
             api: Restangular.service('api'),
 
             experienceGET: function () {
-                return $http.get('/assets/json/experience.json');
+                return $http.get('/cv/assets/json/experience.json');
             },
 
             myLangGET: function () {
-                return $http.get('/assets/json/my-lang.json');
+                return $http.get('/cv/assets/json/my-lang.json');
             },
 
             langCodeGET: function () {
-                return $http.get('/assets/json/lang-code.json');
+                return $http.get('/cv/assets/json/lang-code.json');
             }
         };
     }
