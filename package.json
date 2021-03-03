@@ -7,7 +7,7 @@
   "dependencies": {
     "moment": "^2.20.1",
     "npm": "^4.0.5",
-    "pug": "^2.0.0-rc.1",
+    "pug": "^3.0.1",
     "q": "^1.5.1"
   },
   "devDependencies": {
